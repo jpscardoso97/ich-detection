@@ -1,1 +1,5 @@
 # Project Dependencies
+matplotlib==3.7.1
+numpy==1.26.4
+pydicom==2.4.4
+scikit-image==0.22.0
