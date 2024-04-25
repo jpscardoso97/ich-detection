@@ -41,7 +41,7 @@ class NoiseSimulator:
         Returns:
             numpy.ndarray: The image with Gaussian noise applied.
         """
-        noisy_image = random_noise(image, mode="gaussian", var=sigma**2)
+        noisy_image = random_noise(image, mode="gaussian", var=sigma**2, clip=False)
 
         return noisy_image
 
