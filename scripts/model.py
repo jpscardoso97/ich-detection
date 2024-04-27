@@ -2,6 +2,7 @@
 
 import tensorflow as tf 
 
+# TODO: add denoiser layer
 class VGG(tf.keras.Model):
 
     def __init__(self, num_classes):
