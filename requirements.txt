@@ -1,6 +1,10 @@
 # Project Dependencies
 opencv-python==4.9.0.80
+kaggle==1.6.12
 matplotlib==3.7.1
 numpy==1.26.4
+pandas==2.2.2
 pydicom==2.4.4
+scikit-learn==1.4.2
 scikit-image==0.22.0
+tensorflow==2.16.1
