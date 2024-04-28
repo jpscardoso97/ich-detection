@@ -5,7 +5,7 @@ import tensorflow as tf
 # TODO: add denoiser layer
 class VGG(tf.keras.Model):
 
-    def __init__(self, num_classes):
+    def __init__(self):
         super(VGG, self).__init__()
 
         # Creating blocks of VGG with the following 
@@ -21,8 +21,10 @@ class VGG(tf.keras.Model):
         self.flatten = tf.keras.layers.Flatten()
         # Create a Dense layer with 256 units and ReLU as the activation function
         self.fc = tf.keras.layers.Dense(256,activation='relu')
-        # Finally add the softmax classifier using a Dense layer
-        self.classifier = tf.keras.layers.Dense(num_classes, activation='softmax')
+        # Add a dropout layer with 0.5 dropout rate
+        self.dropout = tf.keras.layers.Dropout(0.5)
+        # Finally add the binary classifier using a Dense layer
+        self.classifier = tf.keras.layers.Dense(1, activation='sigmoid')
 
     def call(self, inputs):
         # Chain all the layers one after the other

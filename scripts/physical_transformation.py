@@ -13,3 +13,7 @@ def get_noisy_image(image, noise_level):
     
     noisy_sinogram = NoiseSimulator.apply_noise(sinogram, simulation_config)
     return iradon(noisy_sinogram, theta=theta, filter_name='ramp')
+
+def get_direct_noisy_image(image, noise_level):
+    simulation_config = NoiseConfiguration([NoiseType.GAUSSIAN], [noise_level])
+    return NoiseSimulator.apply_noise(image, simulation_config)
