@@ -3,14 +3,14 @@ from scripts.noise_simulation import NoiseConfiguration, NoiseSimulator, NoiseTy
 from skimage.transform import iradon, radon
 
 def get_noisy_image(image, noise_level):
-    subsample = 8
+    subsample = 2
     theta = np.linspace(0., 180., max(image.shape)//subsample, endpoint=False)
     sinogram = radon(image, theta=theta)
-    simulation_config = NoiseConfiguration([NoiseType.GAUSSIAN], [noise_level])
     
     if noise_level == 0:
         return iradon(sinogram, theta=theta, filter_name='ramp')
     
+    simulation_config = NoiseConfiguration([NoiseType.GAUSSIAN], [noise_level])
     noisy_sinogram = NoiseSimulator.apply_noise(sinogram, simulation_config)
     return iradon(noisy_sinogram, theta=theta, filter_name='ramp')
 
