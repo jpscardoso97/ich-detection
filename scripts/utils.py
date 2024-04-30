@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 import pydicom
 
-RESIZE_DIM = 256
+RESIZE_DIM = 224
 
 def read_dcm(img_path):
     img_dicom = pydicom.dcmread(img_path)
