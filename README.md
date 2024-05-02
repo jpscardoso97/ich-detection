@@ -1,7 +1,7 @@
 # The Effect of Noise on Hemorrhage Detection using CT Scan Imaging​
 
 ## Description
-This project aims to understand if training a model on images with a certain amount of added noise can improve the model's performance on generalized noisy images.
+This project aims to understand if training a binary classification model (to detect intracranial hemorrhage) on images with a certain amount of added noise can improve the model's performance on generalized noisy images.
 
 ## Dataset
 The dataset used in the project is a subset of the RSNA Intracranial Hemorrhage Detection. The original dataset consists of 7528032 512x512 images in DICOM format. For this project 4000 samples were converted to a PNG dataset in Kaggle: [https://www.kaggle.com/datasets/jpscardoso/rsna-bme548-png](https://www.kaggle.com/datasets/jpscardoso/rsna-bme548-png).
