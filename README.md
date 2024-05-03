@@ -4,7 +4,7 @@
 This project aims to understand if training a binary classification model (to detect intracranial hemorrhage) on images with a certain amount of added noise can improve the model's performance on generalized noisy images.
 
 ## Dataset
-The dataset used in the project is a subset of the RSNA Intracranial Hemorrhage Detection. The original dataset consists of 7528032 512x512 images in DICOM format. For this project 4000 samples were converted to a PNG dataset in Kaggle: [https://www.kaggle.com/datasets/jpscardoso/rsna-bme548-png](https://www.kaggle.com/datasets/jpscardoso/rsna-bme548-png).
+The dataset used in the project is a subset of the RSNA Intracranial Hemorrhage Detection. The original dataset consists of more than 25000 512x512 images in DICOM format. For this project 4000 samples were converted to a PNG dataset in Kaggle: [https://www.kaggle.com/datasets/jpscardoso/rsna-bme548-png](https://www.kaggle.com/datasets/jpscardoso/rsna-bme548-png).
 
 ## Physical Transformation Simulation
 To simulate a real scenario different levels of noise were to the sinograms of the images using the `scikit-image` library. The noise levels used were 0.0, 0.25, 0.5, 0.75, 1.0 and 1.5. 

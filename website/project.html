@@ -1,0 +1,79 @@
+<!-- The structure for this template is code adapted from https://cs.nyu.edu/~deigen/depth/ -->
+<!-- Please site this website if made public -->
+<HTML>
+<HEAD>
+<div>
+<title>The Effect of Noise on Hemorrhage Detection using CT Scan Imaging​</title>
+<LINK REL="stylesheet" HREF="style.css">
+</HEAD>
+<BODY bgcolor="white">
+<center>
+<h2>The Effect of Noise on Hemorrhage Detection using CT Scan Imaging​</h2>
+<h3>Joao Cardoso &nbsp;&nbsp;&nbsp;&nbsp;
+    Jasmine King &nbsp;&nbsp;&nbsp;&nbsp;
+    Pushti Desai &nbsp;&nbsp;&nbsp;&nbsp;
+    Preethi Krishnan
+</h3>
+<h4>
+joao.cardoso<!-- x -->@<!-- -->duke.<!-- h -->edu
+&nbsp;&nbsp;&nbsp;
+jazzie.king<!-- x -->@<!-- -->duke.<!-- h -->edu
+&nbsp;&nbsp;&nbsp;
+pushti.desai<!-- x -->@<!-- -->duke.<!-- h -->edu
+&nbsp;&nbsp;&nbsp;
+preethi.krishnan<!-- x -->@<!-- -->duke.<!-- h -->edu
+</h4>
+<p>
+<table border=0 width="25%">
+<tr>
+<!-- Provide link to your paper below -->
+<td align="center"><a href="https://github.com/jpscardoso97/ich-detection/raw/main/paper/paper.pdf"><font size="+1">Paper PDF</font></a>
+</tr>
+</table>
+
+<!-- Provide link to your "teaser figure - this should summarize your findings at a glace" -->
+<p>
+<br>
+<h3> Solution Pipeline: </h3>
+<img src="pipeline.png" width="50%">
+<p>
+
+<br>
+<h3> Physical Transformations: </h3>
+<div class="image"> <img src="sinogram_noise.png" width="25%"></div>
+
+<table width="80%">
+<tr><td align="left">
+<p>Intracranial hemorrhage (ICH) is a life threatening emergency and is defined as any bleeding within the intracranial vault, including the brain's parenchyma and surrounding meningeal spaces. Early diagnosis of ICH is important because of the rapid progression of neurological deterioration and cardiopulmonary instability.</p>
+<p>Gaussian noise simulates real world CT noise related to electronics, thermal (Johnson-Nyquist noise), quantization, and Poisson noise simulates real world CT scanner noises related to detector issues like low photon count.</p>
+<p>This project aims to understand if it is possible to train a binary classification CNN model (to detect intracranial hemorrhage) on images with a certain amount of added noise in order to achieve better performance on generalized noisy images.</p>
+
+<div class="links">
+    <!-- Provide link to your write-up -->
+    <tr><td align="left">
+    Paper:
+    <ul>
+    <li><a href="https://github.com/jpscardoso97/ich-detection/raw/main/paper/paper.pdf">Paper PDF</a>
+    </ul>
+    
+    <tr><td align="left">
+    Code and Data:
+    <ul>
+    <li><a href="https://github.com/jpscardoso97/ich-detection">Link to the code</a>
+    <li><a href="https://www.kaggle.com/datasets/jpscardoso/rsna-bme548-png">Link to the dataset</a>
+    </ul>
+    
+    <br>
+    <tr><td align="left">
+    Link to the original challenge:
+    <ul>
+    <li><a href="https://www.rsna.org/rsnai/ai-image-challenge/rsna-intracranial-hemorrhage-detection-challenge-2019">Link to RSNA ICH Detection Challenge</a>
+    </ul>
+    <br>
+    </table>
+    </center>
+</div>
+
+</BODY>
+
+</div>
