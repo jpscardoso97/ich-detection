@@ -44,9 +44,9 @@ preethi.krishnan<!-- x -->@<!-- -->duke.<!-- h -->edu
 
 <table width="80%">
 <tr><td align="left">
-<p>Intracranial hemorrhage (ICH) is a life threatening emergency and is defined as any bleeding within the intracranial vault, including the brain's parenchyma and surrounding meningeal spaces. Early diagnosis of ICH is important because of the rapid progression of neurological deterioration and cardiopulmonary instability.</p>
-<p>Gaussian noise simulates real world CT noise related to electronics, thermal (Johnson-Nyquist noise), quantization, and Poisson noise simulates real world CT scanner noises related to detector issues like low photon count.</p>
-<p>This project aims to understand if it is possible to train a binary classification CNN model (to detect intracranial hemorrhage) on images with a certain amount of added noise in order to achieve better performance on generalized noisy images.</p>
+<p>CT images are affected by multiple physical  like sensor noise, temperature (thermal/Johnson-Nyquist noise), electrical charges, background radiation, and photon counting.</p>
+<p>In this study, we simulate CT noise by applying Gaussian and Poisson noise to the sinogram of CT Scans and utilize the reconstructed images to detect Intracranial Hemorrhage (ICH) using the publicly available RSNA dataset.</p>
+<p>Our results show that a physics-informed VGG pipeline can perform effectively with simulated noise.</p>
 
 <div class="links">
     <!-- Provide link to your write-up -->
